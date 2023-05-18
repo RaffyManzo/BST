@@ -1,11 +1,11 @@
-link :  btree item_str main
-	gcc item_str.o main.o btree.o -o btree.exe
+link :  bst item_int main
+	gcc item_int.o main.o bst.o -o bst.exe
 
-btree :
-	gcc -c btree.c
+bst :
+	gcc -c bst.c
 	
-item_str :
-	gcc -c item_str.c
+item_int :
+	gcc -c item_int.c
 
 main : 
 	gcc -c main.c
